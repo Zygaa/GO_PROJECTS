@@ -9,5 +9,11 @@ func main()  {
   fmt.Scanln(&name)
   fmt.Println("Welcome to", challenge, name)
   fmt.Println("This is a", daysTotal, "challenge and you have completed", daysComplete, "days")
+  result := remainDays(daysTotal, daysComplete)
+  fmt.Println("You have", result, "remaining")
   fmt.Println("Great work!")
+}
+
+func remainDays(x uint, y uint) uint{
+  return x - y
 }
